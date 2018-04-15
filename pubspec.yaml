@@ -19,13 +19,13 @@ dev_dependencies:
   test: ^0.12.0
 
 transformers:
-- transform_sass
-- angular
+- angular:
     entry_points:
-      - web/main.dart
-      - test/**_test.dart
+    - web/main.dart
+    - test/**_test.dart
 - test/pub_serve:
     $include: test/**_test.dart
+- transform_sass
 - dart_to_js_script_rewriter
 
 # Uncomment the following in sdk 1.24+ to make pub serve
